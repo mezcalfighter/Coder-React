@@ -119,5 +119,31 @@ const person = {
 console.log(person.location?.city);
 
 // Async & Await
-let data = fetch("https://jsonplaceholder.typicode.com/posts")
-    .then(()=>console.log("Finalizó la carga"));
+const ul = document.createElement("ul");
+fetch("https://jsonplaceholder.typicode.com/posts")
+    .then((response)=>response.json())
+    .then((data)=>{
+        console.log(data);
+        data.forEach((post)=>{
+            const li = document.createElement("li");
+            li.innerText = post.title;
+            ul.append(li);
+        });
+        document.body.append(ul);
+    });
+
+//Faster Async & Await
+async function loadData(){
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts")
+    const data = await response.json()
+    console.log(data);
+    console.log(data);
+    data.forEach((post)=>{
+        const li = document.createElement("li");
+        li.innerText = post.title;
+        ul.append(li);
+    });
+    document.body.append(ul);
+};
+loadData();
+console.log("Linea 2");

@@ -30,3 +30,5 @@ Docs: https://beta.es.reactjs.org/
     cd mi-primer-app
     npm install
     npm run dev
+
+    npm build
