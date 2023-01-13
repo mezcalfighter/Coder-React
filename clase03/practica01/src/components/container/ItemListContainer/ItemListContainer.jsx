@@ -10,7 +10,7 @@ export const ItemListContainer = ({saludo}) => {
     //Ejecuta todo lo que está acá después del rendering
     useEffect(()=>{
         // Acciones despues del rendering
-        console.log("window.addEeventListener")
+        console.log("window.addEventListener")
         return () => {
             console.log("window.removeEventListener")
         }
