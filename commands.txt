@@ -1,0 +1,7 @@
+npm create vite@latest
+=====ANSWER PROMPT=====
+=====ANSWER PROMPT=====
+=====ANSWER PROMPT=====
+cd <nombre projecto>
+npm install
+npm run dev

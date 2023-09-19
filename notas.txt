@@ -1,0 +1,44 @@
+    // ****  Metodos para array   *****
+
+    //Modifican
+    // .push -> Agrega elemento al final
+    // .pop -> Elimina el ultimo elemento
+    // .shift -> Agrega elemento al principio
+    // .unshift -> Elimina elemento al principio
+    // .reverse -> Invierte el array
+    // .sort -> Ordena el array
+    
+    // No modifican 
+    // concat -> une un array con otro
+    // join -> une todos los elementos de un array y devuelve un string
+    
+    // iteracion
+    // map -> Devuelve un array de ma misma longitud
+    // filter -> devuelve un nuevo array que cumpla con ciertas condiciones
+    // reduce -> Itera un array y nos devuelve un unico valor
+    
+    // no devuelve nada
+    // foreach -> Itera en un array
+
+    // Spread Operator
+    const persona = {name:"Emanuel"}
+    const persona2 = {name: "Cristian",edad:26}
+
+    const personaX = {...persona, ...persona2}
+    console.log(personaX)
+    // {name: Cristian, edad:26}
+    const personaY = {...persona2, ...persona}
+    // {name: Emanuel, edad:26}
+
+    // Destructuring
+    // Ejemplo Array
+    const coords = [12,50]
+    const [x,y] = coords
+    draw(x,y)
+
+    // Ejemplo Objeto
+    const personaSample = {name:"Emanuel", age:"26"}
+    const {name,edad} = personaSample
+    console.log(name, edad)
+
+    console.log(personaX)
