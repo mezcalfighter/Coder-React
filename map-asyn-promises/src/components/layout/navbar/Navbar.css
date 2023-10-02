@@ -1,0 +1,21 @@
+.carrito{
+    color: white;
+}
+
+.navbar{
+    margin:0;
+	padding:1em;
+    float:left;
+	width:100%;
+	border:1px solid #42432d;
+	border-width:1px 0;
+}
+
+.navbar li{
+    display:inline;
+	padding:2em;
+	margin:1em;
+    text-decoration:none;
+    text-align:center;
+    list-style:inline;
+}
